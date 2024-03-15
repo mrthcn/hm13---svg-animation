@@ -1,0 +1,49 @@
+body {
+  background-color: #282c34;
+}
+
+.square {
+  fill: cyan;
+  stroke: #ff01e4;
+  stroke-width: 5;
+}
+
+.square:hover {
+  fill: #ff01e4;
+  stroke: cyan;
+  stroke-width: 10;
+  transition: 5s;
+}
+
+.ellipse {
+  fill: #07f11d00;
+  stroke: #07f11d;
+  stroke-width: 5;
+}
+
+.ellipse:active {
+  fill: #07f11d;
+  stroke: #07f11d;
+}
+
+@keyframes circle {
+  from {
+    fill: cyan;
+    stroke: #ff01e4;
+  }
+  to {
+    fill: #ff01e4;
+    stroke: cyan;
+  }
+}
+
+.circle {
+  animation: circle 3s ease-in-out 3s infinite alternate;
+}
+
+/* .rectangle {
+  transform: scale(100%);
+}
+.rectangle:hover {
+  transform: scale(50%);
+} */

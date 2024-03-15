@@ -1,32 +1,8 @@
 body {
-  background-color: #282c34;
+  background-color: #c1f3ff;
 }
 
-.square {
-  fill: cyan;
-  stroke: #ff01e4;
-  stroke-width: 5;
-}
-
-.square:hover {
-  fill: #ff01e4;
-  stroke: cyan;
-  stroke-width: 10;
-  transition: 5s;
-}
-
-.ellipse {
-  fill: #07f11d00;
-  stroke: #07f11d;
-  stroke-width: 5;
-}
-
-.ellipse:active {
-  fill: #07f11d;
-  stroke: #07f11d;
-}
-
-@keyframes circle {
+@keyframes square {
   from {
     fill: cyan;
     stroke: #ff01e4;
@@ -37,13 +13,25 @@ body {
   }
 }
 
-.circle {
-  animation: circle 3s ease-in-out 3s infinite alternate;
+.square {
+  stroke-width: 5;
+  animation: square 1s ease-in-out 0s infinite alternate;
 }
 
-/* .rectangle {
-  transform: scale(100%);
+.ellipse {
+  fill: rgb(0, 255, 13);
+  stroke: #ff0101;
+  stroke-width: 5;
 }
-.rectangle:hover {
-  transform: scale(50%);
-} */
+
+.circle {
+  fill: #d8d6ff;
+  stroke: #0127ff;
+  stroke-width: 5;
+}
+
+.rectangle {
+  fill: rgb(185, 250, 177);
+  stroke: #003d0d;
+  stroke-width: 5;
+}
